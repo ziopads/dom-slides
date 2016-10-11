@@ -1,7 +1,113 @@
 # DOM Intro
 
 ---
+<!--Slide 2-->
+# Objectives
 
+1. Explain what the DOM is.
+2. Describe the relationship between the DOM and HMTL.
+3. Explain what the document is.
+4. Explore and interact with the DOM using browser dev tools.
+
+---
+<!--Slide 3-->
+
+> What is your understanding of the DOM?
+-- Think, Pair, Share
+
+---
+
+
+# The DOM is ...
+
+
+1. The Document Object Model (DOM) is a programming interface (API) for HTML (and XML) documents. 
+1. a fully object-oriented representation of the web page.
+1. can be modified with a scripting language such as JavaScript.
+
+---
+
+# Infographic
+
+1. 
+
+---
+
+
+# What is an API?
+
+1. Application Programming Interface
+
+---
+
+
+# The DOM is an object
+
+1. HTML
+2. DOM
+
+---
+
+
+# The Document
+
+1. A document can be textually represented via HTML (how the developer sees a web page).
+1. A document can be visually represented via the browser window (how the user sees a web page).
+1. A document can be digitally represented via the DOM (how the program sees a webpage).
+
+
+---
+
+
+# Activity 1
+
+1. With a partner:
+2. You Do #1
+
+---
+
+
+# Activity 2
+
+1. By yourself:
+2. You Do #2
+
+---
+
+
+# The DOM is a tree.
+
+1. Root
+2. Nodes
+
+![](http://cdn.mos.cms.futurecdn.net/4cd370bb2f7a7c3394da687bf6ca07b7.jpg)
+
+---
+
+
+# Check for Understanding
+
+```
+<html>
+  <head>
+    <title>Some Title</title>
+  </head>
+
+  <body>
+
+    <h1>Some Header</h1>
+
+    <div>
+      <p>text inside p inside div</p>
+    </div>
+
+  </body>
+</html>
+```
+
+---
+
+<!--Slide -->
 # Objectives
 
 1. Explain what the DOM is.
@@ -11,15 +117,22 @@
 
 ---
 
-> What is your understanding of the DOM?
--- Think, Pair, Share
+
+# The DOM is...
+
+
+1. The Document Object Model (DOM) is a programming interface (API) for HTML (and XML) documents. 
+1. a fully object-oriented representation of the web page.
+1. can be modified with a scripting language such as JavaScript.
 
 ---
 
 
-# And with some other body copy
+# The Document
 
-> The best way to predict the future is to invent it
+1. A document can be textually represented via HTML (how the developer sees a web page).
+1. A document can be visually represented via the browser window (how the user sees a web page).
+1. A document can be digitally represented via the DOM (how the program sees a webpage).
 
 
 ---
