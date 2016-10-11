@@ -149,15 +149,93 @@
 
 ---
 
-> The best way to predict the future is to invent it
--- Alan Kay
+# Querying the DOM
+
+1. Methods
+2. Outputs
+	- Elements vs Nodes
+	- HTML Collections vs NodeLists
+		- HTMLCollections
+			- Contains Elements
+		- NodeLists
+			- Contains ChildNodes
 
 ---
 
-# And with some other body copy
 
-> The best way to predict the future is to invent it
--- Alan Kay
+
+# Object Methods for Querying the DOM
+
+getElementbyID
+getElementsByClassName
+getElementsByName
+getElementsByTagName
+getElementsByTagNameNS
+querySelector
+querySelectorAll
+
+---
+
+
+# Activity
+
+Two whiteboards
+
+1. Divide into groups of four
+	- Consult the documents for your DOM method
+	- Consider your inputs and outputs
+2. On two whiteboards
+	- clarify inputs and outputs
+	- On another white board, write example code
+
+---
+
+# Activity
+
+Group 1: getElementbyID
+Group 2: getElementsByClassName
+Group 3: getElementsByName
+Group 4: getElementsByTagName
+Group 5: getElementsByTagNameNS
+Group 6: querySelector
+Group 7: querySelectorAll
+
+---
+
+
+# Traversing the DOM
+
+1. Methods
+2. Outputs
+3. Access the values of HTML attributes and the innerText of a node.
+
+---
+
+
+# Object Methods for Traversing the DOM
+
+childNodes
+firstChild
+lastChild
+parentNode
+nextSibling
+previousSibling
+
+---
+
+# Accessing values in the DOM
+
+1. HTML attributes
+2. innerText
+
+---
+
+
+# Objectives for Traversing the DOM
+
+1. Query the the DOM for nodes using CSS selectors.
+2. Traverse the DOM using parent, sibling and children nodes.
+3. Access the values of HTML attributes and the innerText of a node.
 
 ---
 
