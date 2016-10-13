@@ -5,7 +5,7 @@
 # Objectives
 
 1. Explain what the DOM is.
-2. Describe the relationship between the DOM and HMTL.
+2. Describe the relationship between the DOM and HTML.
 3. Explain what the document is.
 4. Explore and interact with the DOM using browser dev tools.
 
@@ -21,30 +21,26 @@
 # The DOM is ...
 
 
-1. The Document Object Model (DOM) is a programming interface (API) for HTML (and XML) documents. 
+1. a programming interface (API) for HTML (and XML) documents. 
 1. a fully object-oriented representation of the web page.
 1. can be modified with a scripting language such as JavaScript.
-
----
-
-# Infographic
-
-1. 
 
 ---
 
 
 # What is an API?
 
-1. Application Programming Interface
+1. Application Programming Interface:
+A system that allows you to access the features of something
 
 ---
 
 
 # The DOM is an object
 
-1. HTML
-2. DOM
+HTML is a document.
+The DOM is an object that represents the HTML.
+HTML tags become elements within the DOM.
 
 ---
 
@@ -87,20 +83,17 @@
 
 # Check for Understanding
 
-```
+```html
 <html>
   <head>
     <title>Some Title</title>
   </head>
 
   <body>
-
     <h1>Some Header</h1>
-
     <div>
       <p>text inside p inside div</p>
     </div>
-
   </body>
 </html>
 ```
@@ -111,7 +104,7 @@
 # Objectives
 
 1. Explain what the DOM is.
-2. Describe the relationship between the DOM and HMTL.
+2. Describe the relationship between the DOM and HTML.
 3. Explain what the document is.
 4. Explore and interact with the DOM using browser dev tools.
 
@@ -154,11 +147,8 @@
 1. Methods
 2. Outputs
 	- Elements vs Nodes
-	- HTML Collections vs NodeLists
-		- HTMLCollections
-			- Contains Elements
-		- NodeLists
-			- Contains ChildNodes
+	- HTML Collections
+	- NodeLists
 
 ---
 
@@ -207,7 +197,7 @@ Group 7: querySelectorAll
 
 1. Methods
 2. Outputs
-3. Access the values of HTML attributes and the innerText of a node.
+
 
 ---
 
@@ -243,26 +233,101 @@ previousSibling
 
 ---
 
-# Objectives for Traversing the DOM
+# Objectives for Manipulating the DOM
 
-1. Access properties of DOM elements such as text, html, value.
-2. Set an element’s text.
-3. Add, update, and remove attributes on elements.
-4. Add, update, and remove styles on elements.
-5. Add, update, and remove classes on elements.
-6. Create and access data-attributes on elements.
-
----
-
-> The best way to predict the future is to invent it
--- Alan Kay
+1. Set an element’s text.
+2. Add, update, and remove styles on elements.
+3. Add, update, and remove classes on elements.
+4. Add, update, and remove attributes on elements.
+5. Create and access data-attributes on elements.
 
 ---
 
-# And with some other body copy
+# Changing an element’s value
+1. Open up google.com
+2. In the browser console, query the DOM for the “Google Search” button.
+3. Change the “value” property to 'Ask Jeeves';
 
-> The best way to predict the future is to invent it
--- Alan Kay
+---
+
+## Possible Solution
+
+document.querySelector
+('input[name="btnK"]').value = “Ask Jeeves”
+
+---
+
+# Setting an element's text
+1. Query the Advertising button on the bottom left.
+2. Update the innerText property to “Hello innerText!”
+
+##Bonus: What is the difference between “innerText” and “innerHTML”? (Check out the docs...)
+
+——
+
+## Possible Solution
+
+document.querySelector
+('#fsl > a:nth-child(1)').innerText = “Hello innerText!”
+
+---
+
+# Changing an element’s style
+1. Open up google.com
+2. Query the DOM for the “viewport” div.
+3. set the style property’s backgroundColor to black.
+4. What happens when you refresh the page?
+
+——
+
+## Possible Solution
+
+document.getElementById
+('viewport').style.backgroundColor = “black”
+
+---
+
+#Manipulating classes
+
+1. Navigate to MDN's "Document Object Model" page.
+2. Query the DOM for the div with the class of 'oauth-login-container'
+3. Console all a list of all of the class for this div. What type of data is returned?
+4. Create a new class for this div, and then check to make sure you were successful.
+
+
+——
+
+#Manipulating attributes
+
+2. Query the DOM for the div with an id of 'wiki-document-head'
+3. Remove this id attribute from the div.
+4. List the attributes for the div. Did the previous step work?
+5. Now, add that attribute back!
+
+——
+
+#Manipulating data-attributes
+
+1. What exactly is a data-attribute? (Use the docs!)
+2. Query the DOM for the span with a data-attribute of 'data-service'
+3. Console all data attributes for this particular span.
+4. Create a new data-attribute for the span.
+
+
+——
+
+<!-- If time -->
+##Finish DOM Manipulation exercises on learn page.
+
+---
+
+# Objectives for Manipulating the DOM
+
+1. Set an element’s text.
+2. Add, update, and remove styles on elements.
+3. Add, update, and remove classes on elements.
+4. Add, update, and remove attributes on elements.
+5. Create and access data-attributes on elements.
 
 ---
 
@@ -272,19 +337,50 @@ previousSibling
 
 # Objectives for Traversing the DOM
 
-1. Create brand new DOM elements.
-2. Manipulate DOM elements in-memory.
-3. Move an existing DOM element.
-4. Remove elements from the DOM.
+1. Create brand new DOM elements
+1. Manipulate DOM elements in-memory
+1. Move an existing DOM element
+1. Remove elements from the DOM
 
 ---
 
-> The best way to predict the future is to invent it
--- Alan Kay
+# Creating & manipulating
+document.createElement()
+.appendChild()
+
+var newSection = document.createElement('section');
+newSection.innerHTML = "This is a new section."
+document.body.appendChild(newSection);
 
 ---
 
-# And with some other body copy
 
-> The best way to predict the future is to invent it
--- Alan Kay
+# Moving
+
+.replaceChild(newChild, oldChild)
+
+var updatedSection = document.createElement('Section');
+updatedSection.innerHTML = "This is a different section.";
+
+document.body.replaceChild(updatedSection, newSection);
+
+---
+
+
+# Removal
+
+.removeChild(child)
+
+var nav = document.getElementById('nav');
+document.body.removeChild(nav);
+
+---
+
+# Objectives for Traversing the DOM
+
+1. Create brand new DOM elements
+1. Manipulate DOM elements in-memory
+1. Move an existing DOM element
+1. Remove elements from the DOM
+
+---
