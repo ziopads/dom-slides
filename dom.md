@@ -17,9 +17,7 @@
 
 ---
 
-
 # The DOM is ...
-
 
 1. a programming interface (API) for HTML (and XML) documents. 
 1. a fully object-oriented representation of the web page.
@@ -27,14 +25,12 @@
 
 ---
 
-
 # What is an API?
 
 1. Application Programming Interface:
 A system that allows you to access the features of something
 
 ---
-
 
 # The DOM is an object
 
@@ -44,16 +40,13 @@ HTML tags become elements within the DOM.
 
 ---
 
-
 # The Document
 
 1. A document can be textually represented via HTML (how the developer sees a web page).
 1. A document can be visually represented via the browser window (how the user sees a web page).
 1. A document can be digitally represented via the DOM (how the program sees a webpage).
 
-
 ---
-
 
 # Activity 1
 
@@ -62,14 +55,12 @@ HTML tags become elements within the DOM.
 
 ---
 
-
 # Activity 2
 
 1. By yourself:
 2. You Do #2
 
 ---
-
 
 # The DOM is a tree.
 
@@ -79,7 +70,6 @@ HTML tags become elements within the DOM.
 ![](http://cdn.mos.cms.futurecdn.net/4cd370bb2f7a7c3394da687bf6ca07b7.jpg)
 
 ---
-
 
 # Check for Understanding
 
@@ -110,9 +100,7 @@ HTML tags become elements within the DOM.
 
 ---
 
-
 # The DOM is...
-
 
 1. The Document Object Model (DOM) is a programming interface (API) for HTML (and XML) documents. 
 1. a fully object-oriented representation of the web page.
@@ -120,13 +108,11 @@ HTML tags become elements within the DOM.
 
 ---
 
-
 # The Document
 
 1. A document can be textually represented via HTML (how the developer sees a web page).
 1. A document can be visually represented via the browser window (how the user sees a web page).
 1. A document can be digitally represented via the DOM (how the program sees a webpage).
-
 
 ---
 
@@ -152,8 +138,6 @@ HTML tags become elements within the DOM.
 
 ---
 
-
-
 # Object Methods for Querying the DOM
 
 getElementbyID
@@ -165,7 +149,6 @@ querySelector
 querySelectorAll
 
 ---
-
 
 # Activity
 
@@ -192,15 +175,12 @@ Group 7: querySelectorAll
 
 ---
 
-
 # Traversing the DOM
 
 1. Methods
 2. Outputs
 
-
 ---
-
 
 # Object Methods for Traversing the DOM
 
@@ -219,7 +199,6 @@ previousSibling
 2. innerText
 
 ---
-
 
 # Objectives for Traversing the DOM
 
@@ -294,7 +273,6 @@ document.getElementById
 3. Console all a list of all of the class for this div. What type of data is returned?
 4. Create a new class for this div, and then check to make sure you were successful.
 
-
 ——
 
 #Manipulating attributes
@@ -312,7 +290,6 @@ document.getElementById
 2. Query the DOM for the span with a data-attribute of 'data-service'
 3. Console all data attributes for this particular span.
 4. Create a new data-attribute for the span.
-
 
 ——
 
@@ -353,7 +330,6 @@ newSection.innerHTML = "This is a new section."
 document.body.appendChild(newSection);
 
 ---
-
 
 # Moving
 
